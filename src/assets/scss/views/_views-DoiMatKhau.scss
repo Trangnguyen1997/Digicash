@@ -1,0 +1,62 @@
+.changePassword{
+    height: 100vh;
+    width: 100%;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    p{
+        color: #357ced;
+        font-size: 16px;
+        width: 311px;
+        height: 17px;
+        margin: 0 auto;
+        text-align: left;
+        padding: 20px 0 40px 0;
+        span{
+            img{
+                vertical-align: top;
+                margin-right: 90px;
+            }
+        }
+    }
+.changePassword__form{
+    .form-group{
+        line-height: 10px;
+        input{
+            color: #f7000d;
+        }
+        .form-control{
+        width: 311px;
+        height: 36px;
+        margin: 0 auto;
+        &:focus{
+            box-shadow: none;
+            border: solid 1px black !important;
+            }
+            &::-webkit-input-placeholder {
+                font-size: 13px;
+                font-style: italic;
+              }
+        }
+    .form__text{
+        font-size: 13px;
+        width: 311px;
+        height: 17px;
+        margin: 0 auto;
+        text-align: left;
+    }
+}
+.btn{
+    width: 311px;
+    height: 36px;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15);
+    background-image: linear-gradient(to bottom, #ff691d, #dd3f01);  
+    color: white;
+    font-size: 16px;
+
+    &:hover{
+        background-image: linear-gradient(to bottom, #f7000d, #f7000d); 
+        }
+    }
+    }
+}

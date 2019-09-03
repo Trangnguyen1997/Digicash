@@ -1,0 +1,75 @@
+.register{
+    height: 100vh;
+    width: 100%;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    .register__logo{
+        img{
+        width: 127px;
+        height: 84px;
+        margin: 50px 0 40px 0;
+        } 
+    }
+
+.register__form{
+    .form-group{
+        line-height: 10px;
+        input{
+            color: #f7000d;
+        }
+        .form-control{
+        width: 311px;
+        height: 36px;
+        margin: 0 auto;
+        &:focus{
+            box-shadow: none;
+            border: solid 1px black !important;
+            }
+        }
+        .register__text{
+            font-size: 13px;
+            width: 311px;
+            height: 17px;
+            margin: 0 auto;
+            text-align: left;
+            .black{
+                color: black;
+            }
+            .red{
+                color: #f7000d;
+            }
+        }
+}
+.btn{
+    width: 311px;
+    height: 36px;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15);
+    background-image: linear-gradient(to bottom, #ff691d, #dd3f01);  
+    color: white;
+    font-size: 16px;
+
+    &:hover{
+        background-image: linear-gradient(to bottom, #f7000d, #f7000d); 
+            }
+        }
+    }
+    .register__alert{
+        font-size: 13px;
+        width: 311px;
+        height: 17px;
+        margin: 0 auto;
+        text-align: right;
+        margin-top: 30px;
+        color: black;
+    }
+    .red__alert{
+        font-size: 13px;
+        width: 311px;
+        height: 17px;
+        margin: 0 auto;
+        text-align: right;
+        margin-top: 30px;
+        color: #f7000d;
+    }
+}

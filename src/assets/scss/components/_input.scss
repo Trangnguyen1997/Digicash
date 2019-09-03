@@ -1,0 +1,85 @@
+.inputRange{
+    border-radius: $border-radius-0;
+    padding: 4.3% 11px ;
+    margin-bottom: 16px;
+    background-color: $color-white;
+    &:last-child{
+        margin-bottom: 0;
+    }
+    .inputRange-container{
+
+        .inputRange-content{
+            width: 100%;
+            .input-range{
+                .input-range__label--min, .input-range__label--value, .input-range__label--max{
+                    display: none;
+                }
+                
+                .input-range__track{
+                    background: rgba(180, 180, 180, 0.5);
+                    
+                    .input-range__track--active{
+                        background: $bg-orange-3;
+                    }
+
+                    .input-range__slider-container{
+                        .input-range__slider{
+                            background: $color-white;
+                            border-color: $color-white;
+                            box-shadow: $box-shadow-2;
+                        }
+                    }
+                }
+            }
+            .custom-range{
+                height: 0;
+                margin-top: 17px;
+                margin-bottom: 9px;
+
+                &::-webkit-range-progress{
+                    background-color: red;
+                }
+
+                &::-webkit-slider-runnable-track{
+                    height: 6px;
+                    background-color: rgba(180, 180, 180, 0.5);
+                    border-radius: $border-radius-1;
+
+                    
+                }
+
+                &::-webkit-slider-thumb{
+                    background-color: $color-white;
+                    box-shadow: $box-shadow-2;
+                }
+            }
+
+            .inputRange-content__top{
+                display: flex;
+                justify-content: space-between;
+                .inputRange-text{
+                    @include text($color-black, $fs-3, $fw-normal);
+                    font-family: OpenSans;
+                }
+                
+                .inputRange-value{
+                    @include text($color-blue-0, $fs-3, $fw-bold);
+                }
+            }
+        }
+            
+        .inputRange-content__bottom{
+            display: flex;
+            justify-content: flex-end;
+
+            .inputRange-maxValue{
+                @include text($color-blue-1 , $fs-5, $fw-normal);
+                font-style: italic;
+            }
+        }
+            
+            
+    }
+        
+}
+

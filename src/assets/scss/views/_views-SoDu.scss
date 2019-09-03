@@ -1,0 +1,94 @@
+.soDu{
+    height: 100vh;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    .soDu__content{
+        .soDu__hienTai{
+            width: 365px;
+            margin: 0 auto;
+            margin-top: 10px;
+           .soDu__title{
+            position: absolute;
+            top: 118px;
+            width: 312px;
+            margin: 0 auto;
+            text-align: center;
+            line-height: 15px;
+            margin-left: 36px;
+            .title__h1{
+                font-size: 13px;
+                color: #ffffff;
+            }
+            .title__h2{
+                font-size: 40px;
+                color: #ffffff;
+            }
+        }
+        }
+        
+        .soDu__button{
+            margin-top: 10px;
+            .btn__nhan{
+                width: 148px;
+                height: 36px;
+                border-radius: 4px;
+                box-shadow: 0 3px 6px 0 rgba(53, 124, 237, 0.2);
+                background-color: #ffffff;
+                border: none;
+                font-size: 15px;
+                color: #f7000d;
+                margin-right: 21px;
+                img{
+                    margin-right: 10px;
+                }
+            }
+            .btn__tra{
+                width: 140.5px;
+                height: 36px;
+                border-radius: 4px;
+                box-shadow: 0 3px 6px 0 rgba(53, 124, 237, 0.2);
+                background-color: #ffffff;
+                border: none;
+                font-size: 15px;
+                color: #f7000d;
+                img{
+                    margin-right: 10px;
+                }
+            }
+        }
+        .huongHoaHong{
+            margin-top: 12px;
+        }
+        .soDu__rutTien{
+            margin-top: 10px;
+            .btn__rut{
+                width: 113px;
+                height: 32px;
+                border-radius: 16px;
+                box-shadow: 0 3px 10px 0 rgba(53, 124, 237, 0.2);
+                background-color: #ffffff;
+                border: none;
+                font-size: 15px;
+                color: #5d5d5d;
+                img{
+                    margin-right: 5px;
+                }
+            }
+        }
+        .soDu__xemLichSu{
+            width: 312px;
+            margin: 0 auto;
+            text-align: left;
+            border: none;
+            margin-top: 20px;
+            span{
+                margin-right: 5px;
+            }
+            .lichSu__text{
+                font-size: 13px;
+                color: #357ced;
+            }
+        }
+    }
+}

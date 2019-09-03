@@ -1,0 +1,95 @@
+.chodon-container{
+    .chodon-content{
+        padding: 0 8.3%;
+        background-color: $color-white-0 ;
+        .chodon-custom{
+            padding: 12px 0;
+            display: flex;
+            justify-content: space-between;
+            .chodon-custom__left{
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                .chodon-custom-left__icon{
+                    margin-right: 8px;
+                }
+                .chodon-custom-left__text{
+                    @include text($color-blue-0, $fs-3, $fw-600);
+                }
+            }
+            .chodon-custom__right{
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+                .chodon-custom-right__filter{
+                    margin-left: 12px;
+                    .chodon-filter__dropdown{
+                        position: relative;
+                        .chodon-dropdown__content{
+                            &:hover{
+                                .chodon-dropdown__menu{
+                                    display: block;
+                                }
+                            }
+                        }
+                        .chodon-dropdown__menu{
+                            position: absolute;
+                            top: 10;
+                            right: 0;
+                            background-color: $color-white;
+                            list-style: none;
+                            border-radius: 5px;
+                            display:  none;
+                            box-shadow: $box-shadow-5;
+                            padding: 0;
+                            li{
+                                width: 100%;
+                                padding: 9px 36px 9px 16px;
+                                white-space: nowrap;
+                                &:hover{
+                                    &:first-child{
+                                        border-top-left-radius: 5px;
+                                        border-top-right-radius: 5px;
+                                    }
+                                    &:last-child{
+                                        border-bottom-left-radius: 5px;
+                                        border-bottom-right-radius: 5px;
+                                    }
+                                    background-color: $color-blue-0;
+                                    a{
+                                        color: $color-white;
+                                    }
+                                }
+                                a{
+                                    @include text($color-gray-2, $fs-3, $fw-normal);
+                                    text-decoration: none;
+                                }
+                            }
+                        }
+                    }
+                }     
+            }
+        }
+
+        .chodon-pagination{
+            .chodon-pagination__numbers{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 0;
+                margin: 0;
+                padding-bottom: 16px;
+                li{
+                    width: 24px;
+                    list-style: none;
+                    border: 1px solid;
+                    border-radius: 50%;
+                    a{
+                        text-decoration: none;
+                        @include text($color-black, $fs-3, $fw-normal);
+                    }
+                }
+            }
+        }
+    }
+}

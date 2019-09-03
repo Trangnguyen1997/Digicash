@@ -1,0 +1,68 @@
+.duLieuXinVay-main{
+    width: 100%;
+
+    .duLieuXinVay-content{
+        padding: 5%;
+        border-radius: $border-radius-0;
+        background-image: $bg-orange-2 ;
+    }
+
+    .duLieuXinVay-alert{
+        margin: 5% 0;    
+        padding: 5%;
+        background-color: rgba(53, 124, 237, 0.1);
+        .duLieuXinVay-alert__content{
+            @include text($color-blue-0, $fs-2, $fw-600);
+        }
+            
+    }
+
+    .duLieuXinVay-code{
+        .input-group{
+            margin: 5% 0;
+            .input-group-text{
+                background-color: $color-white;
+                border-right: 0;
+            }
+            .inputCode{
+                border-left: none;
+                padding: 0;
+                @include text($color-gray-1, $fs-4, $fw-normal);
+                font-style: italic;
+                &::placeholder{
+                    @include text($color-gray-1, $fs-4, $fw-normal);
+                    font-style: italic;
+                }
+            }
+        }
+    }
+
+    .duLieuXinVay{
+        .duLieuXinVay-top{
+            display: flex;
+            justify-content: space-between;
+            .duLieuXinVay-top__title{
+                @include text($color-red-0, $fs-3, $fw-normal);
+            }
+            .duLieuXinVay-top__value{
+                @include text($color-red-0, $fs-3, $fw-600);
+            }
+        }
+
+        .duLieuXinVay-bottom{
+            display: flex;
+            justify-content: space-between;
+            .duLieuXinVay-bottom__title{
+                @include text($color-black, $fs-3, $fw-normal);
+            }
+            .duLieuXinVay-bottom__value{
+                @include text($color-blue-1 , $fs-3, $fw-600);
+            }
+        }
+        .duLieuXinVay-line{
+            margin-top: 0.5rem;
+            margin-bottom: 0.5rem; 
+            background-color: $bg-orange-3;
+        }
+    }
+}

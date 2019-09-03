@@ -1,0 +1,155 @@
+.thongBao{
+    width: 100%;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    padding:  15px 8%;
+    position: absolute;
+    opacity: 1;
+    z-index: 2;
+    // background-color: rgba(0, 0, 0, 0.5);
+    .thongBao__title{
+        color: #357ced;
+        font-size: 16px;
+        font-weight: 600;      
+        margin: 0 auto;
+        text-align: left;
+        padding: 0 0 15px 0;
+        span{
+            img{
+                vertical-align: top;
+                margin-right: 90px;
+            }
+        }
+    }
+    .thongBao1{
+        border-radius: 4px;
+        box-shadow: 0 3px 10px 0 rgba(53, 124, 237, 0.2);
+        background-color: #ffffff;
+        margin: 0 auto;
+        margin-bottom: 20px;
+        padding: 15px;
+     .thongBao1__content{
+        .thoiGian{
+            font-size: 10px;
+            font-style: italic;
+            text-align: left;
+            color: #f7000d;
+        }
+        .thongBao1__item{
+            opacity: 0.8;
+            font-family: OpenSans;
+            font-size: 13px;
+            text-align: left;
+            color: #000000;
+            span{
+                font-weight: bold;
+            }
+        }.button{
+            .tuChoi{
+                width: 108px;
+                height: 32px;
+                border-radius: 4px;
+                background-color: #b4b4b4;
+                border: none;
+                font-size: 14px;
+                color: #ffffff;
+                margin-right: 12px;
+                &:hover{
+                    background-color: grey;
+                }
+            }.xacThuc{
+                width: 156px;
+                height: 32px;
+                border-radius: 4px;
+                box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15);
+                background-image: linear-gradient(to bottom, #ff691d, #dd3f01);
+                border: none;
+                font-size: 14px;
+                color: #ffffff;
+                &:hover{
+                    background-color: #f7000d;
+                }
+            }
+        }
+     }
+    }
+    .thongBao2{
+        border-radius: 4px;
+        box-shadow: 0 3px 10px 0 rgba(53, 124, 237, 0.2);
+        background-color: #ffffff;
+        margin: 0 auto;
+        margin-bottom: 20px;
+        padding: 12px;
+        .thoiGian2{
+            font-family: OpenSans;
+            font-size: 10px;
+            font-style: italic;
+            text-align: left;
+            color: #00379f;
+        }
+        .thongBao2__content{
+            font-family: OpenSans;
+            font-size: 13px;
+            text-align: left;
+            color: rgba(0, 0, 0, 0.8);
+            span{
+                font-weight: 600;
+            }
+        }
+    }
+    .thongBao3{
+        border-radius: 4px;
+        box-shadow: 0 3px 10px 0 rgba(53, 124, 237, 0.2);
+        background-color: #ffffff;
+        margin: 0 auto;
+        margin-bottom: 20px;
+        padding: 15px;
+        .thoiGian3{
+            font-family: OpenSans;
+            font-size: 10px;
+            font-style: italic;
+            text-align: left;
+            color: #00379f;
+        }
+        .thongBao3__content{
+            font-family: OpenSans;
+            font-size: 13px;
+            text-align: left;
+            color: rgba(0, 0, 0, 0.8);
+            span{
+                font-weight: 600;
+            }
+        }
+        .hoanTac{
+            font-size: 14px;
+            text-align: right;
+            color: #357ced;
+        }
+        
+    }
+    .thongBao4{
+        border-radius: 4px;
+        box-shadow: 0 3px 10px 0 rgba(53, 124, 237, 0.2);
+        background-color: #ffffff;
+        margin: 0 auto;
+        margin-bottom: 20px;
+        padding: 15px;
+        .thoiGian4{
+            font-family: OpenSans;
+            font-size: 10px;
+            font-style: italic;
+            text-align: left;
+            color: #00379f;
+        }
+        .thongBao4__content{
+            font-family: OpenSans;
+            font-size: 13px;
+            text-align: left;
+            color: rgba(0, 0, 0, 0.8);
+            span{
+                font-weight: 600;
+            }
+        }
+    }
+}

@@ -1,0 +1,10 @@
+.nav-tabs{
+    border-bottom: 0px;
+    background-color: rgba(53, 124, 237, 0.1);
+    padding: 9px 0 9px 0;
+    .nav-tabs__item{
+        padding: 13px 24px 10px 24px;
+        @include text($color-blue-0, $fs-3, $fw-normal);
+        text-decoration: none;
+    }
+}

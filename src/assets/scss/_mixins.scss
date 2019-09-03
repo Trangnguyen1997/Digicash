@@ -1,0 +1,11 @@
+@mixin text($colorTxt, $fsTxt, $fwTxt){
+    color: $colorTxt;
+    font-size: $fsTxt;
+    font-weight: $fwTxt;
+}
+
+@mixin flexBox-default($display, $jtfContent, $borderRds){
+    display: $display;
+    justify-content: $jtfContent;
+    border-radius: $borderRds;
+}

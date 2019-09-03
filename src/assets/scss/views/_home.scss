@@ -1,0 +1,68 @@
+.trang-chu{
+    background-color: $color-white-0;
+    padding: 0 4%;
+
+    .trangchu-logan{
+        padding: 8px  4% 11px 4%;
+        h1{
+            @include text($color-blue-0, $fs-1, $fw-600);
+            margin: 0;
+        }
+    }
+
+    .trangchu-container{
+        padding: 4.6%;
+        @include flexBox-default($flex, center, $border-radius-0);
+        background-color: $color-white;
+        box-shadow: $box-shadow-0;
+    }
+    
+    .trangchu-chodon{
+        .chodon-title{
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            padding: 5.8%;
+            .chodon-title__text{
+                margin: 0 8px;
+                @include text($color-red-0, $fs-1, $fw-normal);
+            }
+        }
+        .chodon-content{
+            padding: 0 7%;
+        }
+    }
+
+    .trangchu-signup{
+        margin-bottom: 16px;
+
+        .signup-content{
+            padding: 17px 7.8%;
+            background-image: $bg-orange-4;
+            box-shadow: $box-shadow-3;
+            border-radius: $border-radius-0;
+            border: none;
+            
+            .signup-content__items{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                .sigup-items__icon{
+                    margin-right: 13px;
+                }
+                
+                .sigup-items__text{
+                    @include text($color-white, $fs-2, $fw-normal);
+                    text-align: left;
+                }
+            }
+
+        }
+    }
+}
+
+
+
+
+

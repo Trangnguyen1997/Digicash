@@ -1,0 +1,25 @@
+.navbar-container{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    overflow: hidden;
+    .navbar-content{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;  
+        padding: 0;
+        margin: 0;
+        background-color: $color-white-1;
+        .navbar-items{
+            text-decoration: none;
+            flex-grow: 1;
+            padding: 7.8px 0 6.5px 0;
+            .navbar-items-content{
+                list-style: none;
+            }
+            .navbar-content__text{
+                margin-top: 6px;
+            }
+        }
+    }
+}

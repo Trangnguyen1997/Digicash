@@ -1,0 +1,105 @@
+.donXinVay-items{
+    font-size: $fs-3;
+    background-image: url('../../img/Subtraction 172.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    margin-bottom: 16px;
+
+    .donXinVay-items__content{
+        padding: 13px 0 4px 0;
+
+        .donXinVay-items__top, .donXinVay-items__middle{
+            padding: 0 6.4%;
+        }
+        
+
+        .donXinVay-top__title, .donXinVay-top__value, .donXinVay-middle__content{
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        .donXinVay-items__top{
+            
+            .donXinVay-line{
+                border-style: dashed;
+                margin: 6px 0;
+                border-color: $color-blue-0;
+            }
+
+            .donXinVay-top__title,.donXinVay-top__value{
+
+                .donXinVay-top__textLeft{
+                    color: $color-red-0;
+                }
+
+                .donXinVay-top__textRight{
+                    color: $color-blue-0;
+                }
+            }
+
+            .donXinVay-top__value{
+
+                .donXinVay-top__textLeft,.donXinVay-top__textRight{
+                    font-weight: $fw-bold;
+                }
+
+                .donXinVay-money{
+                    @include text($color-gray-1, $fs-5, $fw-normal);
+                    text-decoration-line: line-through;
+                }
+
+                .unit-price{
+                    text-decoration: underline;
+                }
+            }
+        }
+
+        .donXinVay-items__middle{
+
+            .donXinVay-middle__content{
+
+                .donXinVay-middle__textLeft{
+                    @include text($color-black, $fs-3, $fw-normal);
+                    .donXinVay-middle__icon{
+                        margin-right: 7px;
+                    }
+                }
+
+                .donXinVay-middle__textRight{
+                    @include text($color-blue-1, $fs-3, $fw-600);
+                }
+            }
+        }
+    }
+
+    .donXinVay-items__bottom{
+    
+        .donXinVay-bottom__content{
+            background-color: rgba(53, 124, 237, 0.1);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom-left-radius: $border-radius-0;
+
+            .donXinVay-bottom__icon{
+                padding-left: 6.7%;
+            }
+
+            .donXinVay-bottom__button{
+                background-image: $bg-orange-4;
+                border: none;
+                border-bottom-right-radius: $border-radius-0;
+                @include text($color-white, $fs-1, $fw-normal);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 3px 6%;
+
+                .donXinVay-button__icon{
+                    margin-right: 9px;
+                }
+            }
+        }
+    }
+}

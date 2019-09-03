@@ -1,0 +1,37 @@
+body {
+  margin: 0;
+  font-family: 'Source Sans Pro', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+//views
+@import 'views/App.scss';
+@import 'views/views-DangNhap';
+@import 'views/views-DangKy';
+@import 'views/views-DoiMatKhau';
+@import 'views/views-QuenMatKhau';
+@import 'views/drawer';
+@import 'views/views-SoDu';
+@import 'views/views-HanMuc';
+
+//components
+@import './variables';
+@import './mixins';
+@import 'components/button';
+@import 'components/input';
+@import 'components/header';
+@import 'components/dulieuxinvay';
+@import 'components/donxinvay';
+@import './views/home';
+@import './views/about';
+@import 'components/navtab';
+@import './views/chodon';
+@import 'components/navbar';
+@import 'components/footer';
+@import 'components/thongbao';

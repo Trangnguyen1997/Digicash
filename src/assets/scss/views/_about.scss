@@ -1,0 +1,126 @@
+.gioithieu-container{
+    padding: 4.6%;
+    
+
+    .gioithieu-content{
+        padding: 4.9% 6.4%;
+        background-color: $color-white;
+        box-shadow: $box-shadow-0;
+
+        .gioithieu-content__title{
+            @include text($color-red-0, $fs-0, $fw-600);
+        }
+
+        .gioithieu-content-line{
+            padding: 0 28.5%;
+            hr{
+                margin-top: 11.5px;
+                margin-bottom: 12px;
+                border-color: $color-red-0;
+            }
+        }
+
+        .gioithieu-content__buttons{
+            .gioithieu-buttons__items{
+                display: flex;
+                justify-content: space-around;
+                
+                .gioithieu-buttons__item{
+                    border-radius: $border-radius-1;
+                    background-image: $bg-orange-0;
+                    border: none;
+                    @include text($color-white, $fs-2, $fw-normal);
+                    letter-spacing: normal;
+                    padding: 4% 3.1%;
+                    line-height: $line-height-1;
+                    vertical-align: middle;
+                    white-space: nowrap;
+                }
+            }
+        }
+
+        .gioithieu-content__info{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 5% 0;
+
+            .gioithieu-info__number{
+                @include text($color-red-0, 30px, $fw-normal);
+            }
+
+            .gioithieu-info__text{
+                padding: 0px 6%;
+                @include text($color-blue-1, $fs-3, $fw-normal);
+            }
+        }
+
+        .gioithieu-content__images{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .gioithieu-images__img{
+                height: 160px;
+                background-size: 100% 100%;
+                background-repeat: no-repeat;
+                background-position: center;            
+            }
+
+            .gioithieu-images__text{
+                text-align: left;
+                @include text($color-black, $fs-3, $fw-normal);
+                margin: 4% 0;
+                &:last-child{
+                    margin-top: 4%;
+                    margin-bottom: 0;
+                }
+            }
+        }
+
+        .gioithieu-content__carousel{
+            margin: 5% 0;
+            .carousel{
+                .carousel-inner{
+                    .carousel-item{
+
+                        img{
+                            width: 100%;
+                            height: 160px;
+                        }
+
+                        .carousel-caption{
+                            width: 100%;
+                            background: rgba(255, 255, 255, 0.6);
+                            padding: 0;
+                            right: 0%;
+                            left: 0%;
+                            bottom: 0px;
+                            h3{
+                                margin: 0;
+                                text-align: left;
+                                @include text($color-black, 10px, $fw-normal);
+                                padding: 3px  57.7% 3px 2.6%;
+                            }
+                            p{
+                                display: none;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .gioithieu-carousel__text{
+                text-align: left;
+                @include text($color-black, $fs-3, $fw-normal);
+                margin: 4% 0;
+            }
+        }
+    }
+
+    @media (max-width: 768px){
+        .d-md-block {
+            display: block!important;
+        }
+    }
+}

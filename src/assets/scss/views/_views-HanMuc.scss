@@ -1,0 +1,145 @@
+.hanMuc{
+    height: 80vh;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    .hanMuc__content{
+        .hanMuc__tieuDung{
+            width: 312px;
+            height: 85px;
+            border-radius: 4px;
+            box-shadow: 0 3px 10px 0 rgba(53, 124, 237, 0.2);
+            background-color: #ffffff;
+            margin: 0 auto;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            p{
+                font-size: 13px;
+                padding-top: 5px;
+            }
+            .hanMuc__tieuDung__content{
+                display: grid;
+                grid-template-columns: repeat(2,1fr);
+                margin-top: -11px;
+                line-height: 1px;
+                .conLai{
+                    width: 156px;
+                    height: 56px;
+                    background-color: #E5F5E8;
+                    padding-top: 10px;
+                    .conLai__h1{
+                        font-size: 12px;
+                        color: #009f1f;
+                    }
+                    .conLai__h2{
+                        font-size: 18px;
+                        color: #009f1f;
+                        font-weight: bold;
+                    }
+
+                }
+                .toiDa{
+                    width: 156px;
+                    height: 56px;
+                    background-color: #EEEEEE;
+                    .toiDa__h1{
+                        font-size: 12px;
+                        color: #5d5d5d;
+                        padding-top: 14px;
+                    }
+                    .toiDa__h2{
+                        font-size: 20px;
+                        color: #5d5d5d;
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+    }.hanMuc__button{
+        .hanMuc__button__trai{
+            width: 148px;
+            height: 55px;
+            border-radius: 4px;
+            box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15);
+            background-image: linear-gradient(to bottom, #ff691d, #dd3f01);
+            border: none;
+            font-size: 15px;
+            color: #ffffff;
+            text-align: center;
+            margin-bottom: 20px;
+            margin-right: 17px;
+            span{
+                padding: 3px 11px 0 11px;
+            }
+        }
+        .hanMuc__button__phai{
+            width: 148px;
+            height: 55px;
+            border-radius: 4px;
+            box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15);
+            background-color: #009f1f;
+            border: none;
+            font-size: 15px;
+            color: #ffffff;
+            text-align: center;
+            p{
+                padding: 0px 17px 0 17px;
+            }
+        }
+    }.thanhToan{
+        width: 312px;
+        height: 132.8px;
+        margin: 0 auto;
+        border-radius: 4px;
+        box-shadow: 0 3px 10px 0 rgba(53, 124, 237, 0.2);
+        background-color: #ffffff;
+        .thanhToan__title{
+            text-align: left;
+            padding-left: 20px;
+            font-weight: 600;
+            color: #f7000d;
+            background-color: #FFE5E6;
+        }
+        .thanhToan__content{
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            .thanhToan__content__left{
+                p{
+                    font-size: 13px;
+                    text-align: left;
+                    margin-left: 20px;
+                    margin-top: -10px;
+                }
+            }
+            .thanhToan__content__right{
+                text-align: right;
+                margin-right: 20px;
+                margin-top: -10px;
+                .right_h1{
+                    font-size: 15px;
+                    color: #f7000d;
+                    font-weight: 600;
+                }
+                .right_h2{
+                    font-size: 13px;
+                    color: #00379f;
+                    font-weight: 600;
+                    margin-top: -10px;
+                }
+            }
+        }
+            .thanhToan__btn{
+                width: 283px;
+                height: 36px;
+                margin: 0 auto;
+                border-radius: 4px;
+                box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15);
+                background-image: linear-gradient(to bottom, #ff691d, #dd3f01);
+                border: none;
+                font-size: 16px;
+                color: #ffffff;
+                text-align: center;
+                margin-top: -20px;
+        } 
+    }
+}

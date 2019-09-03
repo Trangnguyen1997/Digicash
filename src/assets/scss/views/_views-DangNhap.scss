@@ -1,0 +1,80 @@
+.login{
+    height: 100vh;
+    width: 100%;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    .login__logo{
+        img{
+        width: 127px;
+        height: 84px;
+        margin: 50px 0 40px 0;
+        }
+    }
+
+.login__form{
+    .form-group{
+        line-height: 10px;
+        input{
+            color: #f7000d;
+        }
+        .form-control{
+        width: 311px;
+        height: 36px;
+        margin: 0 auto;
+        &:focus{
+            box-shadow: none;
+            border: solid 1px black !important;
+            }
+        }
+    .form__text{
+        font-size: 13px;
+        width: 311px;
+        height: 17px;
+        margin: 0 auto;
+        text-align: left;
+    }
+}
+.btn{
+    width: 311px;
+    height: 36px;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15);
+    background-image: linear-gradient(to bottom, #ff691d, #dd3f01);  
+    color: white;
+    font-size: 16px;
+
+    &:hover{
+        background-image: linear-gradient(to bottom, #f7000d, #f7000d); 
+        }
+    }
+
+    .login__text{
+        font-size: 13px;
+        font-weight: normal;
+        font-style: italic;
+        font-stretch: normal;
+        line-height: 3.38;
+        letter-spacing: normal;
+        text-align: right;
+        color: #00379f;
+        width: 311px;
+        height: 36px;
+        margin: 0 auto;
+        }
+    }
+    .regis{
+        margin-top: 80px;
+        line-height: 2px;
+        .regis__h1{
+            color: #357CED;
+        }
+        .regis__h2{
+            font-size: 13px;
+        }
+        .regis__h3{
+            font-size: 18px;
+            font-weight: bold;
+            color: #f7000d;
+        }
+    }
+}
