@@ -29,6 +29,7 @@ class Drawer extends Component {
     user_infor
       .userInfor()
       .then(res => {
+        // localStorage.setItem("name", res.name);
         // console.log(res.name);
         this.setState({
           name: res.name,
@@ -88,12 +89,12 @@ class Drawer extends Component {
               </a>
             </li>
             <li>
-              <a id="" className="menu-item" href="">
+              <NavLink to="/tai-khoan/dang-nhap" className="menu-item">
                 <span>
                   <i className="fa fa-plus"></i>
                 </span>
                 Thêm tài khoản
-              </a>
+              </NavLink>
             </li>
             <hr />
             <li>

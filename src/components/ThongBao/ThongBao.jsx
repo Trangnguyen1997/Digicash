@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import PropTypes from "prop-types";
 import back from "../../assets/img/back.png";
 import hoantac from "../../assets/img/hoanTac.png";
-import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 import socket from "../../variables/socket";
 import thong_bao from "../../apis/thong_bao.api";
 
@@ -35,34 +35,34 @@ class ThongBao extends Component {
   render() {
     let dd = this.state.thongbao;
     return (
-      <div className="thongBao">
+      <div>
         <div className="thongBao__title">
-          <NavLink to="/">
-            <span>
-              <img src={back} alt="" />
-            </span>
-          </NavLink>
+          <span onClick={this.props.toggle}>
+            <img src={back} alt="" />
+          </span>
           Thông báo
         </div>
-
-        {dd.map((thongbao, index) => {
-          return (
-            // eslint-disable-next-line react/jsx-key
-            <div className="thongBao1">
-              <div className="thongBao1__content" key={index}>
-                <p className="thoiGian">
-                  <li>{thongbao.createdAt}</li>
-                </p>
-                <p className="thongBao1__item">{thongbao.description}</p>
-                <div className="button">
-                  <button className="tuChoi">Từ chối</button>
-                  <button className="xacThuc">Xác thực</button>
+        <div className="thongBao">
+          <div className="scroll">
+            {dd.map((thongbao, index) => {
+              return (
+                // eslint-disable-next-line react/jsx-key
+                <div className="thongBao1">
+                  <div className="thongBao1__content" key={index}>
+                    <p className="thoiGian">
+                      <li>{thongbao.createdAt}</li>
+                    </p>
+                    <p className="thongBao1__item">{thongbao.description}</p>
+                    <div className="button">
+                      <button className="tuChoi">Từ chối</button>
+                      <button className="xacThuc">Xác thực</button>
+                    </div>
+                  </div>
                 </div>
-              </div>
-            </div>
-          );
-        })}
-        {/* <div className="thongBao2">
+              );
+            })}
+          </div>
+          {/* <div className="thongBao2">
           <p className="thongBao2__content">
             <p className="thoiGian2">
               <li>12:30 - 20/06/2019</li>
@@ -75,7 +75,7 @@ class ThongBao extends Component {
           </p>
         </div> */}
 
-        {/* <div className="thongBao3">
+          {/* <div className="thongBao3">
           <p className="thongBao3__content">
             <p className="thoiGian3">
               <li>21:10 - 31/02/2019</li>
@@ -90,7 +90,7 @@ class ThongBao extends Component {
           </p>
         </div> */}
 
-        {/* <div className="thongBao4">
+          {/* <div className="thongBao4">
           <p className="thongBao4__content">
             <p className="thoiGian4">
               <li>21:10 - 31/02/2019</li>
@@ -98,6 +98,7 @@ class ThongBao extends Component {
             Hệ thống của chúng tôi sẽ bảo trì vào ngày 05/03/2019. Xin cảm ơn.
           </p>
         </div> */}
+        </div>
       </div>
     );
   }

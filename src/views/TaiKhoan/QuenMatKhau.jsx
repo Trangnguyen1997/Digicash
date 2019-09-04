@@ -9,6 +9,8 @@ import "react-validation/build/button";
 import CheckButton from "react-validation/build/button";
 import { isEmpty } from "validator";
 import Swal from "sweetalert2";
+import authentication from "../../apis/authentication.api";
+import { Redirect } from "react-router-dom";
 
 const required = value => {
   if (isEmpty(value)) {
@@ -26,9 +28,12 @@ const numeric = checkingText => {
     );
   }
 };
-
+//Sai API
 class QuenMatKhau extends Component {
-  state = {};
+  state = {
+    phone: "",
+    isLoading: false
+  };
 
   handleChange = e => {
     this.setState({
@@ -39,18 +44,38 @@ class QuenMatKhau extends Component {
   onSubmit(e) {
     e.preventDefault();
     this.form.validateAll();
-
-    if (this.checkBtn.context._errors.length === 0) {
-      Swal.fire({
-        position: "top-center",
-        type: "success",
-        title: "Chúng tôi sẽ sớm phản hồi cho bạn. Vui lòng kiểm tra email",
-        showConfirmButton: false,
-        timer: 1500
-      });
-    }
+    this._forgotpassword();
   }
+  _forgotpassword = () => {
+    const data = {
+      phone: this.state.number
+    };
+    authentication
+      .forgotpassword(data)
+      .then(res => {
+        console.log("thanh cong" + res);
+        // Swal.fire({
+        //   position: "top-center",
+        //   type: "success",
+        //   title: "Chúng tôi sẽ sớm phản hồi cho bạn. Vui lòng kiểm tra email",
+        //   showConfirmButton: false,
+        //   timer: 1500
+        // });
+        this.setState({
+          isLoading: true
+        });
+      })
+      .catch(err => {
+        console.log("thất bại" + err);
+        this.setState({
+          message: "Vui lòng kiểm tra lại"
+        });
+      });
+  };
   render() {
+    // if (this.state.isLoading) {
+    //   return <Redirect to="/" />;
+    // }
     return (
       <div className="forgetPassword">
         <p>
@@ -95,6 +120,7 @@ class QuenMatKhau extends Component {
           <button type="submit" className="btn">
             Xác nhận
           </button>
+          <small className="form-text text-danger">{this.state.message}</small>
           <CheckButton
             style={{ display: "none" }}
             ref={c => {

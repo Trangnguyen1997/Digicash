@@ -58,7 +58,6 @@ class DangNhap extends Component {
       .login(data)
       .then(res => {
         localStorage.setItem("accessToken", res);
-        handleSocket();
         // console.log("Đăng nhập thành công và token của bạn là: " + res);
         this.setState({
           isLoading: true

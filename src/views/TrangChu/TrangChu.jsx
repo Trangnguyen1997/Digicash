@@ -3,10 +3,13 @@ import logoMarket from "assets/img/shopping-cart.svg";
 import bitmap from "assets/img/bitmap.svg";
 import DonXinVay from "../../components/DonXinVay/DonXinVay";
 import DuLieuXinVay from "../../components/DuLieuXinVay/DuLieuXinVay";
+import { handleSocket } from "../../variables/socket";
 
 class TrangChu extends Component {
   state = {};
-
+  componentDidMount() {
+    handleSocket(); // Join room ở đây nè.
+  }
   render() {
     return (
       <div className="trang-chu">

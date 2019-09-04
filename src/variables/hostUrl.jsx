@@ -7,7 +7,7 @@ if (
   )
 ) {
   // HOST = "/cms/api";
-  HOST = "http://shv.wejelly.com";
+  HOST = "http://digicash.wejelly.com";
 } else {
   HOST = window.location.protocol + "//" + window.location.hostname;
 }

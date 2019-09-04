@@ -1,6 +1,7 @@
 import React from "react";
 import logo from "../../assets/img/Digicash_logo_Final.png";
 import notification from "../../assets/img/notification.png";
+import thongbao from "../../assets/img/thongbao.jpg";
 import menu from "../../assets/img/menu.png";
 import {
   Collapse,
@@ -12,22 +13,24 @@ import {
   DropdownItem
 } from "reactstrap";
 import { Link } from "react-router-dom";
-import { NavLink } from "react-router-dom";
 import LoginButton from "../Button/LoginButton";
 import Drawer from "./Drawer";
 import ThongBao from "../ThongBao/ThongBao";
 import { listenNotiFromServer } from "../../variables/socket";
+// import { socket } from "../../variables/connection";
+
 class Header extends React.Component {
   constructor(props) {
     super(props);
     this.toggle = this.toggle.bind(this);
+    this.notifi = this.notifi.bind(this);
     this.state = {
       isOpen: false,
       isLogging: false,
       isNotiShow: false
     };
   }
-  componentWillMount() {
+  componentDidMount() {
     const arr = listenNotiFromServer();
     console.log(arr);
   }
@@ -36,11 +39,16 @@ class Header extends React.Component {
       isOpen: !this.state.isOpen
     });
   }
+  notifi() {
+    this.setState({
+      isNotiShow: !this.state.isNotiShow
+    });
+  }
   render() {
     return (
       <div className="header">
         {/*  noti={} bỏ vào thongbao */}
-        {this.state.isNotiShow && <ThongBao />}
+        {this.state.isNotiShow && <ThongBao toggle={this.notifi} />}
         <Navbar color="light" light expand="md">
           <Link to="/">
             <img src={logo} className="img-logo-header" alt="" />
@@ -49,7 +57,10 @@ class Header extends React.Component {
             <LoginButton titleButton="Đăng nhập ngay" />
           ) : (
             <div className="Navbar-icons">
-              <div className="Navbar-toggler-notification">
+              <div
+                className="Navbar-toggler-notification"
+                onClick={this.notifi}
+              >
                 <img src={notification} alt="" />
               </div>
               {/* <NavbarToggler onClick={this.toggle} /> */}

@@ -23,9 +23,15 @@ const authentication = {
         throw err;
       });
   },
-
   changepassword(data) {
     return callApi("update-password-user", "PUT", data)
+      .then(res => res)
+      .catch(err => {
+        throw err;
+      });
+  },
+  forgotpassword(data) {
+    return callApi("user/forgot-password-sms", "POST", data)
       .then(res => res)
       .catch(err => {
         throw err;
